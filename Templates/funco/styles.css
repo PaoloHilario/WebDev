@@ -1,0 +1,399 @@
+/* This rule resets a core set of elements so that they will appear consistent across browsers. Without this rule, content styled with an h1 tag, for example, would appear in different places in Firefox and Internet Explorer because each browser has a different top margin default value. By resetting these values to 0, the elements will initially be rendered in an identical fashion and their properties can be easily defined by the designer in any subsequent rule. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+/* The body is the outermost layout component and contains the visible page content. Setting properties for the body element will help to create consistent styling of the page content and more manageable CSS. Besides using the body element to set global properties, it is common to use the body element to set the background color of the page and create a centered container for the page content to display. */
+body {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+	background: #1C252F;
+}
+/* Commonly used to style page titles. */
+h1 {
+	color: #293747;
+	font: normal 24px/24px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: -1px;
+	background: url(images/h1-bg.png) no-repeat center bottom;
+	padding-bottom: 16px;
+}
+/* Commonly used to style section titles. */
+h2 {
+	color: #3D435F;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E9E6DF;
+	padding-bottom: 6px;
+	font: bold normal 18px/18px Verdana, Geneva, sans-serif;
+	letter-spacing: -1px;
+}
+img {
+	border:none;
+}
+/* Sets the style for unvisited links. */
+a, a:link {
+	color: #900;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for visited links. */
+a:visited {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+	color: #000;
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+	color: #000;
+}
+.galleryleft {
+	float:left;
+	border:solid 5px #000;
+	margin:10px 10px 0 0;
+}	
+.arrow {
+	background: url(images/arrow.gif) no-repeat left top;
+	display: block;
+	padding-left: 15px;
+	margin-top: 8px;
+}
+/* This extra layer simply allows the body tag to have the same darker color as the bottom of the footer so the color extends to the bottom of the browser window */
+#background {
+	background: #E9E6DF url(images/body-fade-bg.jpg) repeat-x left top;
+}
+/* This is a container for the page content. It is common to use the container to constrain the width of the page content and allow for browser chrome to avoid the need for horizontal scrolling. For fixed layouts you may specify a container width and use auto for the left and right margin to center the container on the page. IE 5 browser require the use of text-align: center defined by the body element to center the container. For liquid layouts you may simply set the left and right margins to center the container on the page. */
+#outerWrapper {
+	text-align: left; /* Redefines the text alignment defined by the body element. */
+	width: 920px;
+	margin: 0px auto 0;
+}
+/* These are the settings for the top navigation bar */
+#nav {
+	height: 59px;
+	color: #FFFFFF;
+	background: url(images/nav-bg.jpg) repeat-x top;
+	padding-left: 20px;
+}
+#nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+#nav ul li {
+	margin: 0px;
+	display: block;
+	float: left;
+	list-style: none;
+	clear: right;
+}
+#nav ul li a {
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+	color: #CCCFE1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 59px;
+	font-weight: bold;
+	background: url(images/nav-divider.gif) no-repeat right top;
+}
+#nav ul li a:hover {
+	background: url(images/nav-hover.jpg) no-repeat right top;
+	text-decoration: none;
+	color: #FC0;
+}
+#nav ul li#active {
+	background: url(images/nav-hover.jpg) no-repeat right top;
+	text-decoration: none;
+}
+#nav ul li#active a {
+	color: #FFFFFF;
+}
+/* The logo is the entire header image */
+#logo {
+	background: url(images/logo.jpg) no-repeat left top;
+	height: 134px;
+}
+#outerWrapper #contentWrapper {
+	overflow: hidden;
+	margin-right: 0px;
+	margin-left: 0px;
+	background: url(images/content-bg.jpg) repeat-y center;
+	padding-right: 20px;
+	padding-top: 15px;
+}
+#outerWrapper #contentWrapper #content {
+	float: left;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	width: 610px;
+}
+#outerWrapper #contentWrapper #rightColumn {
+	float: right;
+	width: 245px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+/* This creates more spacing between lines in the content paragraphs */
+#content p {
+	line-height: 140%;
+}
+/* These are the optional content area box settings */
+.widebox {
+	border: 1px solid #E9E6DF;
+	background-color: #F8F7F3;
+	margin-bottom: 15px;
+}
+.widebox h5 {
+	background-image: url(images/widebox-title.jpg);
+	background-repeat: repeat-x;
+	background-position: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+}
+#content .widebox p {
+	padding:8px;
+	margin:3px;
+	line-height: 120%;
+}
+#content ul li {
+	margin-bottom:10px;
+}
+/* This styles the headings in the right sidebar */
+#rightColumn h3 {
+	font: bold normal 16px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	padding-top: 7px;
+	letter-spacing: normal;
+	background: url(images/h3-bg.png) no-repeat left top;
+	border-bottom: 2px solid #FFF;
+	color: #FFF;
+	padding-bottom: 13px;
+}
+/* This styles the dividing lines between items in the right sidebar if hr is used */
+#rightColumn hr {
+	background-color: #7079A4;
+	color: #6F78A3;
+	height: 1px;
+	border: 0;
+}
+#rightColumn ul {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+#rightColumn ul li {
+	list-style: none;
+	display: inline;
+}
+#rightColumn ul li a {
+	display: block;
+	padding: 4px 4px 4px 10px;
+	border-bottom: 1px solid #E9E6DF;
+}
+#rightColumn ul li a:hover {
+	text-decoration: none;
+	background-color: #E9E6DF;
+}
+.sidebarlt {
+	padding: 6px;
+	border: 1px solid #E9E6DF;
+	background-color: #F8F7F3;
+}
+.sidebardk {
+	color: #FFFFFF;
+	border: 1px solid #253141;
+	padding: 6px;
+	background-color: #41556F;
+}
+.sidebardk a, .sidebardk a:hover, .sidebardk a:visited, sidebardk a:active {
+	color: #FFFFFF;
+}
+/* This styles footer section */
+#footertop {
+	background: #6C1413 url(images/footer-top-fade.jpg) repeat-x top;
+}
+#footer {
+	margin: 0px auto 0;
+	height: 100%;
+	width: 920px;
+	color: #FFF;
+	background: url(images/footer.jpg) no-repeat center top;
+	padding-top: 40px;
+}
+#footer h4 {
+	font: normal 22px/24px Verdana, Geneva, sans-serif;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+#footerlower {
+	clear: both;
+	width: 920px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footerlower p {
+	margin:0px;
+	padding:10px;
+	color:#fff;
+}
+#footerlower a, #footerlower a:link, #footerlower a:visited, #footerlower a:active {
+	color:#C9D3DE;
+	font-weight: normal;
+}
+#footerlower a:hover {
+	color: #FFF;
+}
+/* This is the left side of the footer feature area */
+.foot-left {
+	width:490px;
+	float:left;
+	text-align:left;
+	padding-left:20px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+/* This is the right side of the footer feature area */
+.foot-right {
+	width:370px;
+	float:right;
+	text-align:left;
+	padding: 0px 15px 10px 5px;
+}
+/* This provides padding away from the sidebar edges for sidebar paragraphs. */
+.pad {
+	padding-right: 10px;
+	padding-left: 15px;
+	clear: both;
+	padding-top: 15px;
+	margin: 0px;
+}
+/* This can be applied to images to position them left of the related content */
+.float-left {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 12px;
+	border: none;
+}
+/* This can be applied to images to position them right of the related content */
+.float-right {
+	display: block;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 12px;
+	border: none;
+}
+/* These are the settings for the newsletter signup in the footer */
+#emailform {
+	margin: 5px 0 20px 0px;
+}
+#emailform input {
+	margin:0px;
+}
+#email {
+	color: #900;
+	font: bold 16px Georgia, "Times New Roman", Times, serif;
+	padding: 3px;
+	border: 1px solid #000;
+}
+#emailform #button {
+	width:125px;
+	text-align:center;
+	color:#900;
+	font-size:16px;
+	font-weight:bold;
+	border:none;
+	background: transparent url(images/button.gif) no-repeat;
+	height: 31px;
+	padding: 0px;
+	margin: 0px 0px 0px 10px;
+}
+#emailform #button:hover {
+	color: #FFF;
+	background-image: url(images/button-hover.gif);
+	cursor: pointer;
+}
+/* This styles the sitemap page list */
+#sitemap ul {
+	margin-top: 5px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+#sitemap li.subpage {
+	background: url(images/subpage.gif) no-repeat left top;
+	padding-left: 12px;
+	line-height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	list-style: none;
+}
+#sitemap li.subpage a, #content li.subpage a:link {
+	font-weight:normal;
+}
+/* These are the styles for the contact form */
+Label {
+}
+.inputValue {
+	width:50%;
+	margin-top:5px;
+}
+.inputText {
+	width:85%;
+	height:180px;
+	margin-top:5px;
+}
+.inputButton {
+}
+.required {
+	font-size:9px;
+	color:#C00;
+}
+/* ---------- These are the styles for the data detail table ---------- */
+
+#detail {
+	margin-top: 20px;
+}
+#detail h3 {
+	margin: 8px 0px 0px;
+	padding: 0px;	
+}
+#detail p {
+	line-height:normal;	
+}
+#detail a {
+	font-weight:bold;	
+}
+#detail td.uline {
+	border-bottom:1px solid #ccc;	
+}

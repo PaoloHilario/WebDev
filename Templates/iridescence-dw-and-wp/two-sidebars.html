@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/Two-Sidebar.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Iridescence Template from JustDreamweaver.com</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="js/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"> // loads jQuery </script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"> // for jQuery UI components </script>
+<script type="text/javascript" src="js/hoverIntent.js"> // for navigation </script>
+<script type="text/javascript" src="js/superfish.js"> // for navigation </script>
+<script type="text/javascript" src="js/supersubs.js"> // for navigation </script>
+<!-- InstanceBeginEditable name="head" -->
+
+<script type="text/javascript">  // This script is for the navigation menu
+    $(document).ready(function(){ 
+        $("ul.sf-menu").supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+    }); 
+</script>
+<script type="text/javascript"> // This script is for the accordion
+	$(function() {
+		$("#accordion").accordion({
+			autoHeight: false,
+			collapsible: true,
+			icons: {'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus' }
+			});
+	});
+</script>
+<script type="text/javascript"> // This script is for the tabbed panels
+	$(function() {
+		$("#tabs").tabs();
+	});
+</script>
+
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="header" class="container_12"> <a href="#"><img src="images/logo.png" alt="Logo" width="259" height="78"/></a>
+  <div class="headerlinks">
+    <p><a href="#">About Us</a> | <a href="#">Our Guarantee</a> | <a href="#">Blog</a> | <a href="#">Privacy</a></p>
+    <p><strong>Call Us Toll Free at 888-123-1234</strong></p>
+  </div>
+</div>
+<div id="nav" class="container_12 toprounded">
+  <ul class="sf-menu">
+    <li class="first-item"> <a href="index.html">Home</a> </li>
+    <!-- apply first-item class to round the menu item corner -->
+    <li> <a href="#a">Sample Menu</a>
+      <ul>
+        <li> <a href="#aa">Menu item that is quite long</a> </li>
+        <li class="current"> <a href="#ab">Menu item</a>
+          <ul>
+            <li class="current"><a href="#">Menu item</a></li>
+            <li><a href="#aba">Menu item</a></li>
+            <li><a href="#abb">Menu item</a></li>
+            <li><a href="#abc">Menu item</a></li>
+            <li><a href="#abd">Menu item</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Menu item</a>
+          <ul>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Menu item</a>
+          <ul>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="#">Template Pages</a>
+      <ul>
+        <li> <a href="index.html">Home Page</a></li>
+        <li> <a href="left-sidebar.html">Left Sidebar</a></li>
+      	<li> <a href="right-sidebar.html">Right Sidebar</a></li>
+        <li> <a href="two-sidebars.html">Dual Sidebars</a></li>
+        <li> <a href="no-sidebars.html">No Sidebars</a></li>
+        <li> <a href="sample-slideshows.html">Slideshow Examples</a></li>
+        <li> <a href="960-grid.html">960 Grid System</a></li>
+         </ul>
+        </li>
+       
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</div>
+<div id="content-top" class="container_12"></div>
+<div id="content" class="container_12"><!-- InstanceBeginEditable name="MainContent" -->
+<div class="grid_6 push_3">
+  <h1>Iridescence jQuery Template (H1 heading)</h1>
+  <p>The Iridescence jQuery Dreamweaver template features the same SEO friendly code as our free template, but also includes some really cool jQuery functionality as well.</p>
+  <h2>jQuery Tab Content (H2 heading)</h2>
+  <p>Easily build tabbed content areas anywhere on your page using jQuery tab panels like this:</p>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Nunc tincidunt</a></li>
+      <li><a href="#tabs-2">Proin dolor</a></li>
+      <li><a href="#tabs-3">Aenean lacinia</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+    </div>
+    <div id="tabs-2">
+      <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+    </div>
+    <div id="tabs-3">
+      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+    </div>
+  </div>
+  <div style="height:30px;"></div>
+  <!-- div to space elements -->
+  <h3>This is a H3 heading</h3>
+  <p>Cras et dapibus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent dolor neque, gravida sed tempus a, vehicula nec metus. Cras accumsan ultricies sapien id tincidunt. Etiam vitae ante quis lectus pulvinar</p>
+  <h4>jQuery Accordion Panels too! (H4 heading)</h4>
+  <p>It's as easy as copying and pasting to add collapsible jQuery accordion panels as shown below. The template includes all the code, you just need to position it where you want it and add your own content!</p>
+  <div id="accordion">
+    <h3><a href="#">Section 1</a></h3>
+    <div>
+      <ul>
+        <li><a href="#">Menu item 1</a></li>
+        <li><a href="#">Menu item 2</a></li>
+        <li><a href="#">Menu item 3</a></li>
+      </ul>
+    </div>
+    <h3><a href="#">Section 2</a></h3>
+    <div>
+      <p> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+        suscipit faucibus urna. </p>
+    </div>
+    <h3><a href="#">Section 3</a></h3>
+    <div>
+      <p> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+      <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+      </ul>
+    </div>
+    <h3><a href="#">Section 4</a></h3>
+    <div>
+      <p> Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+        mauris vel est. </p>
+      <p> Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. </p>
+    </div>
+  </div>
+  <div style="height:30px;"></div>
+  <!-- div to space elements -->
+  <h5>This is a H5 heading</h5>
+  <p>Cras et dapibus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent dolor neque, gravida sed tempus a, vehicula nec metus. Cras accumsan ultricies sapien id tincidunt. Etiam vitae ante quis lectus pulvinar</p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div class="grid_3 pull_6">
+    <div class="sidebarbox">
+      <h3>Sidebar Navigation</h3>
+      <ul>
+        <li><a href="left-sidebar.html">Left Sidebar Layout</a> </li>
+        <li><a href="right-sidebar.html">Right Sidebar Layout</a></li>
+        <li><a href="two-sidebars.html">Two Sidebar Layout</a></li>
+        <li><a href="no-sidebars.html">No Sidebar Layout</a></li>
+        <li><a href="960-grid.html">How the 960 Grid Works</a></li>
+        <li><a href="sample-slideshows.html">Sample Slideshows</a></li>
+      </ul>
+    </div>
+    <div class="simple">
+      <h4>Sidebar Navigation v.2</h4>
+      <ul>
+        <li><a href="#">Products</a> </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Our Company</a></li>
+        <li><a href="#">Our Guarantee</a></li>
+        <li><a href="#">Buy Now</a></li>
+      </ul>
+    </div>
+    <div class="sidebarbox">
+      <h3>Sidebar Content</h3>
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. </p>
+      <p>Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. </p>
+    </div>
+    <div class="simple">
+      <h4>More Sidebar Content</h4>
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. </p>
+      <p>Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. </p>
+    </div>
+  </div>
+  <div class="grid_3">
+    <div class="sidebarbox">
+      <h3>Sidebar Navigation</h3>
+      <ul>
+        <li><a href="left-sidebar.html">Left Sidebar Layout</a> </li>
+        <li><a href="right-sidebar.html">Right Sidebar Layout</a></li>
+        <li><a href="two-sidebars.html">Two Sidebar Layout</a></li>
+        <li><a href="no-sidebars.html">No Sidebar Layout</a></li>
+        <li><a href="960-grid.html">How the 960 Grid Works</a></li>
+        <li><a href="sample-slideshows.html">Sample Slideshows</a></li>
+      </ul>
+    </div>
+    <div class="simple">
+      <h4>Sidebar Navigation v.2</h4>
+      <ul>
+        <li><a href="#">Products</a> </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Our Company</a></li>
+        <li><a href="#">Our Guarantee</a></li>
+        <li><a href="#">Buy Now</a></li>
+      </ul>
+    </div>
+    <div class="sidebarbox">
+      <h3>Sidebar Content</h3>
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. </p>
+      <p>Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. </p>
+    </div>
+    <div class="simple">
+      <h4>More Sidebar Content</h4>
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. </p>
+      <p>Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. </p>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer" class="container_12">
+  <div class="grid_6">Copyright &copy; 2010 Your Website</div>
+  <div class="grid_6" style="text-align:right;"><a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Our Blog</a></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

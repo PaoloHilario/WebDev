@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/No-Sidebar.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AECSA.ORG : Home</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- InstanceEndEditable -->
+<link rel="icon" type="image/png" href="http://www.aecsa.org/favicon.png">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="js/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"> // loads jQuery </script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"> // for jQuery UI components </script>
+<script type="text/javascript" src="js/hoverIntent.js"> // for navigation </script>
+<script type="text/javascript" src="js/superfish.js"> // for navigation </script>
+<script type="text/javascript" src="js/supersubs.js"> // for navigation </script>
+
+<script type="text/javascript"> //Script for Google Analyitics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22004073-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">  // This script is for the navigation menu
+    $(document).ready(function(){ 
+        $("ul.sf-menu").supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+    }); 
+</script>
+<script type="text/javascript"> // This script is for the accordion
+	$(function() {
+		$("#accordion").accordion({
+			autoHeight: false,
+			collapsible: true,
+			icons: {'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus' }
+			});
+	});
+</script>
+<script type="text/javascript"> // This script is for the tabbed panels
+	$(function() {
+		$("#tabs").tabs();
+	});
+</script>
+
+<script type="text/javascript"> //Script for Google Analyitics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22004073-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<style type="text/css">
+body {
+	background-color: #F4F4F4;
+}
+</style>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {
+	background-color: #F4F4F4;
+}
+</style>
+</head>
+<body>
+<div id="header" class="container_12"> <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
+  <div class="headerlinks">
+    <p><a href="index.html">About Us</a> | <a href="http://blog.aecsa.org">Blog</a> | <a href="#">Privacy</a></p>
+    <p><strong>Building Better Software</strong></p>
+  </div>
+</div>
+<div id="nav" class="container_12 toprounded">
+  <ul class="sf-menu">
+    <li class="first-item"> <a href="index.html">Home</a> </li>
+    <!-- apply first-item class to round the menu item corner -->
+    <li> <a href="#a">Projects</a>
+      <ul>
+        <li> <a href="#aa">Project Proposals</a> </li>
+        <li class="current"> <a href="#ab">Applied Research</a>
+          <ul>
+            <li class="current"><a href="#">Application Integration</a></li>
+            <li><a href="#abd">Cross-Platform Integration</a></li>
+            <li><a href="#abd">Database Integration</a></li>
+            <li><a href="#aba">Cloud Computing</a></li>
+            <li><a href="#aba">Parallel Processing</a></li>
+            <li><a href="#aba">Mobile Technology</a></li>
+            <li><a href="#abc">Web API</a></li>
+            <li><a href="#abd">Communications</a></li>
+            <li><a href="#abb">Social Networking</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Implementations</a>
+          <ul>
+            <li><a href="#">C# dotNET</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Obj-C</a></li>
+            <li><a href="#">Mobile OS</a></li>
+            <li><a href="#">Web Services</a></li>
+            <li><a href="#">Database</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Downloads</a>
+          <ul>
+            <li><a href="#">AECSA SDK's</a></li>
+            <li><a href="#">AECSA API's</a></li>
+            <li><a href="#">Code Libraries</a></li>
+            <li><a href="#">Programming Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="#">Resources</a>
+      <ul>
+        <li> <a href="#">AECSA GitHub</a></li>
+        <li> <a href="#">AECSA Private Cloud</a></li>
+        <li> <a href="#">AECSA University</a></li>
+      	<li> <a href="#">AECSA Wiki</a></li>
+     </ul>
+    </li>
+    <li> <a href="#">Membership</a>
+      <ul>
+        <li> <a href="#">Software Professionals</a></li>
+        <li> <a href="#">Hardware Manufacturers</a></li>
+        <li> <a href="#">AEC Professionals</a></li>
+        <li> <a href="#">Business Professionals</a></li>
+      	<li> <a href="#">Universities</a></li>
+        <li> <a href="#">Scientific Institutions</a></li>
+     </ul>
+    </li>
+    <li> <a href="#">Sponsorship</a>
+      <ul>
+        <li> <a href="#">Technical Advisory Board</a></li>
+      	<li> <a href="#">Industry Advisory Board</a></li>
+        <li> <a href="#">Project Sponsorship</a></li>
+        <li> <a href="#">Quarterly Expense Reports</a></li>
+     </ul>
+    </li>
+    <li> <a href="contact.html">Contact</a></li>
+    <li> <a href="http://blog.aecsa.org">Blog</a></li>
+  </ul>
+</div>
+<div id="content-top" class="container_12"></div>
+<div id="content" class="container_12">
+  <!-- InstanceBeginEditable name="MainContent" --><div class="grid_12">
+  <h1>The AEC Software Alliance</h1>
+  <p> AECSA is a non-profit organization dedicated to the advancement of technology and interoperability between software applications in the Architecture, Engineering, and Construction market place. As a neutral organization that understands the needs of both the AEC and Software communities, we can facilitate the adoption of new technologies, business models, and open standards while helping to build healthier software businesses and a stable, technologically diverse marketplace.</p>
+  <h4>Ways We Can Help</h4>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Research &amp; Development</a></li>
+      <li><a href="#tabs-2">Implementation Support</a></li>
+      <li><a href="#tabs-3">Educational Programs</a></li>
+      <li><a href="#tabs-4">Business &amp; Marketing</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Conduct focused research on emerging technology and their possible application to existing AEC processes and business practices. Provide technical resources for industry partners and educational institutions in the development of new technologies and processes. Assist AEC software companies in the assesment of their existing technology platforms, and develop noninvasive "bridging" technology solutions to achieve adoption of new technology and  real time interoperability between existing products.</p>
+    </div>
+    <div id="tabs-2">
+      <p>Provide purpose built software development kits (SDK's) for common Integrated Development Environments (IDE's), packaged and open-source code base libraries, and platform specific implementations of widely accepted AEC industry data exchange formats. This would reduce the risk to software companies adopting new technologies by allowing them to focus on their core competencies and reduce the capital resource and staffing necessary to implement inter-operable functionality into their existing products.</p>
+    </div>
+    <div id="tabs-3">
+      <p>Develop educational programs that encourage awareness between the AEC and Software communities, creating better synergy between the AEC and Technology sectors. AEC programs such as VDC, BIM, Sustainability, Lean, and IPD can benefit from the emerging technology in parallel processing, virtualization, cloud computing, mobile, and web technology. This would allow technology professionals to better understand the broader range of needs within the AEC market and allow AEC professionals to understand how they can better adopt and leverage technlogy to meet their business goals.</p>
+      <p>Focused educational programs for AEC software industry professionals would help create awareness of new software development related technologies and methodologies such as Social Coding, Object-Oriented Programming, Platform Independent Programming Languages, Test Driven Development, and Agile Methodologies. Ultimately, allowing us to build better quality products and allow us to attract new talent into the AEC software industry that we have lost to other areas of the technology sector.</p>
+    </div>
+    <div id="tabs-4">
+      <p>AECSA can provide a neutral forum in which to promote technical mind-share and collaboration within our industry while protecting the intellectual property of its constituents. The sole purpose of the open-source projects executed with the guidance of AECSA, it's members, and sponsors are meant to benefit the entire AEC Industry by adding to the functionality and value of  the existing products we use today. </p>
+      <p>Software Companies that participate in AECSA will be able to benefit from the open-source projects that will primarily focus on the technical implementation of AEC industry standards, common interoperable functionality, and application communication standards. This allows software companies to add functionality to existing specialized products while still protecting their application specific IP. Building Owners and AEC Professionals will be able to chose from a diverse range of specialzed and interoperable products for to achieve true Integrated Building Lifecycle Management. </p>      
+    </div>
+  </div>
+  <div style="height:30px;"></div>
+  <!-- div to space elements -->
+  <h4>What's Next?</h4>
+  <p>As we are a new organization, we have a lot of work ahead of us and we could really use your help and support. We have a long list of TODO's below, please <a href="../contact.html">email us</a> if you can donate some of your time, expertise, and/or financial support to help us start this exciting new endeavor. We will be updating you on our progress using this list, our blog, and social media as we progress. </p>
+  <div id="accordion">
+    <h3><a href="#">Industry Membership</a></h3>
+    <div>
+      <ul>
+        <li>Technology</li>
+        <li>Business & Legal</li>
+        <li>Architecture, Engineering, & Construction</li>
+        <li>Owners & Government Agencies</li>
+        <li>Universities</li>
+        <li>Scientific Institutions</li>
+      </ul>
+    </div>
+
+    <h3><a href="#">Resources</a></h3>
+    <div>
+      <ul>
+        <li>Capital Resource Donations</li>
+        <li>Technology Resource Donations</li>
+        <li>Intellectual Capital</li>
+      </ul>
+    </div>
+    
+    <h3><a href="#">Technical Infrastructure</a></h3>
+    <div>
+      <ul>
+      	<li>Idea Management Systems</li>
+        <li>Social Coding Environments</li>
+        <li>Define Coding Standards & Best Practices</li>
+        <li>Communication Infrastructure</li>
+        <li>Virtual Collaboration Environments</li>
+        <li>Shared Compute Resources</li>
+        <li>AECSA Website Development</li>
+      </ul>
+    </div>
+    
+    <h3><a href="#">Legal Matters</a></h3>
+    <div>
+      <ul>
+        <li>Organizational Charter</li>
+        <li>Articles of Incorporation</li>
+        <li>Form The Board of Directors</li>
+        <li>Organizational By-Laws</li>
+        <li>Transparent Budget & Accounting Systems</li>
+        <li>File for Non-Profit 501(c)(3) Status</li>
+      </ul>
+    </div>
+  </div>
+  <!-- div to space elements -->
+    <div style="height:30px;"></div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="NM9J8DH27B3XY">
+    <input type="image" src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110429-1/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div><!-- InstanceEndEditable -->
+  <div class="clear"></div>
+</div>
+<div id="footer" class="container_12">
+  <div class="grid_6">Copyright &copy; 2011 AEC Software Alliance</div>
+  <div class="grid_6" style="text-align:right;">
+  <a href="http://www.linkedin.com/company/aecsa-org?trk=fc_badge"><img src="images/linkedin_badge.png" alt="AECSA.ORG on LinkedIn" align="bottom" locale="en"></a>
+  <a href="http://www.twitter.com/AECSAORG"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-c.png" alt="Follow AECSA on Twitter"/></a> <a href="https://github.com/AECSA"><img src="images/github_badge.png" alt="AECSA @ GitHub"/></a> <a href="http://blog.aecsa.org/feed"><img src="images/rss_badge.png" alt="AECSA RSS Feed"/></a></div>
+<div class="clear"></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

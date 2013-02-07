@@ -1,0 +1,327 @@
+How to change the width of your site
+------------------------------------
+
+The template comes with 6 different style sheets, located in the CSS folder. The template uses the grid-960.css file by default. To change to a different width, choose from either the grid-780.css, grid-840.css, grid-900.css, grid-1020.css or grid-fluid.css file.  In the head section of your template, find the style sheet link to the grid-960.css file and simply change that to the new width you wish to use. If you are using multiple templates, make the same change in each file.
+
+The index.html file does not use a Dreamweaver template since it's the only file that will use that layout, so you will also need to change the style sheet link in that file separately from the .dwt template files.
+
+
+How to Customize the WordPress theme to look like your Dreamweaver template
+---------------------------------------------------------------------------
+
+First, copy any new images you created from the Dreamweaver template PSD file into the /images/ folder inside the WP theme folder.
+
+If you just changed the logo image, that will be the only image you need to copy.
+
+
+Copying CSS Changes to the WP theme
+-----------------------------------
+
+There are two style sheets used with the WP theme. One is named style.css and should be identical to the style.css file of your Dreamweaver template. So when you are finished customizing your DW template, copy the entire style.css file to the style.css file inside the WP theme folder.
+
+You need to leave the top portion of the WP theme style.css file intact, so go down a few lines and find the comment telling you where to paste the CSS code from your DW template.
+
+Replace all the code after the comment with the new style sheet code from your DW template.
+
+There is a second style sheet named wp-style.css in the WP theme folder that controls specific elements of the WP theme. You can edit that file as you wish.
+
+
+Changing the WP theme layout to match your DW template
+------------------------------------------------------
+
+The WP theme uses the identical 960 grid layout system that the DW template uses. It uses the grid-960.css file by default, so if you changed your Dreamweaver template to use one of the other grid CSS files, open the header.php file and find the style sheet link to grid-960.css and change that to match the style sheet you're using with your Dreamweaver template. 
+
+The WP theme uses it's own 'template' system and each page is split into multiple PHP files.
+
+The WP by default uses a grid_3 left sidebar, a grid_6 content area and a grid_3 right sidebar.
+
+Remember that all columns together must add up to 12.
+
+The files you need to change in your WP theme are:
+
+ - index.php
+ - archive.php 
+ - 404.php
+ - page.php
+ - single.php
+ - sidebar-left.php
+ - sidebar-right.php
+
+
+If you are using a 3-column layout (both left and right sidebars), then all you need to do is change the grid numbers to match your DW template.
+
+Some examples:
+
+Example 1
+-------------------------------------------------------
+
+If you are now using a grid_2 left sidebar, a grid_7 content area and a grid_3 right sidebar (adds up to 12), then you need to change:
+
+Files: index.php, archive.php, 404.php, single.php
+
+Old code:  <div class="grid_6"> (about line 6 in each file)
+New code: <div class="grid_7">
+
+File: sidebar-left.php
+
+Old code: <div class="grid_3"> (line 1)
+New code: <div class="grid_2">
+
+File: sidebar-right.php - no changes needed.
+
+
+Example 2
+-------------------------------------------------------
+
+If you are now using a grid_3 left sidebar, a grid_5 content area and a grid_4 right sidebar (adds up to 12), then you need to change:
+
+Files: index.php, archive.php, 404.php, single.php
+
+Old code:  <div class="grid_6"> (about line 6 in each file)
+New code: <div class="grid_5">
+
+File: sidebar-left.php - no changes needed
+
+File: sidebar-right.php
+
+Old code: <div class="grid_3"> (line 1)
+New code: <div class="grid_4">
+
+
+Example 3 - Removing left sidebar
+-------------------------------------------------------
+
+If you want to remove the left sidebar from your WP theme and only use a right sidebar, and you are using a grid_8 content and a grid_4 right sidebar:
+
+Files: index.php, archive.php, 404.php, single.php
+
+Old code:  <?php get_sidebar('left'); ?> (about line 5 in each file)
+New code: delete that line entirely
+
+Old code:  <div class="grid_6"> (about line 6 in each file)
+New code: <div class="grid_8">
+
+
+File: sidebar-right.php
+
+Old code: <div class="grid_3"> (line 1)
+New code: <div class="grid_4">
+
+
+Example 4 - Removing right sidebar
+-------------------------------------------------------
+
+If you want to remove the right sidebar from your WP theme and only use a left sidebar, and you are using a grid_8 content and a grid_4 right sidebar:
+
+Files: index.php, archive.php, 404.php, single.php
+
+Old code:  <div class="grid_6"> (about line 6 in each file)
+New code: <div class="grid_8">
+
+Old code:  <?php get_sidebar('right'); ?> (bottom of code about 4 lines up)
+New code: delete that line entirely
+
+
+File: sidebar-left.php
+
+Old code: <div class="grid_3"> (line 1)
+New code: <div class="grid_4">
+
+
+Switching between sidebar box styles in the WP theme
+--------------------------------------------------------
+
+There are two styles of sidebar styles. The CSS classes are 'sidebarbox' and 'simple'.
+
+Both are built into the WP theme, so you can match the style you are using in your Dreamweaver site. The theme defaults to using the 'simple' style in both sidebars.
+
+Here's how to set which style is used in the WP theme sidebars:
+
+Open functions.php and at the top of the file you'll see this code:
+
+if ( function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name' => 'Left Sidebar',
+		'before_widget' => '<div class="simple">',
+		'after_widget' => '</div>', 
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	)); 
+	
+	register_sidebar(array(
+		'name' => 'Right Sidebar',
+		'before_widget' => '<div class="simple">',
+		'after_widget' => '</div>', 
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	)); 
+}
+
+To change which style of boxes the WP theme displays, simply change the class="simple" line in either the 'Left Sidebar' or 'Right Sidebar' or both locations to class="sidebarbox". Save the functions.php file and the new style will be displayed.
+
+
+Navigation menus in WP 3.0+
+----------------------------------------------------------
+
+The WP theme supports the custom menu feature built into WP 3.0+ for creating menus. If you are using WP 3.0, you can access the menu feature under the 'Appearance' tab. Simply create a new menu and add the pages, categories, etc that you want to show in your WP blog. Once saved, the menu will appear in place of the default menu.
+
+
+Removing the 'Home' link from the WP theme navigation
+----------------------------------------------------------
+
+There is a built-in 'Home' link in the WP theme navigation. If you are using a static home page however, you may see two 'Home' links depending on how you set up your blog.
+
+To remove the extra 'Home' link, open the header.php file and find and remove this line of code (about line 48):
+
+<li<?php if (is_home()) { echo ' class="current_page_item"'; } ?>><a href="<?php echo get_settings('home'); ?>"><span>Home</span></a></li>
+
+If you are using a custom menu with WP 3.0+, the extra 'Home' link will not show. You can add a 'Home' link within the menu builder.
+
+
+Removing post metadata such as tags, author, etc.
+----------------------------------------------------------
+
+If you don't want certain post metadata to show, you can edit the theme files to remove them.
+
+The archive.php, index.php and single.php files have post metadata information.
+
+Look for code similar to this:
+
+	<span class="nbdate"><?php the_time(__('M jS, Y', '')) ?></span>
+
+	<span class="nbauthor"><?php the_author_posts_link(); ?></span>
+
+	<span class="nbcategories"><?php the_category(', '); ?></span>
+
+The first line is the date/time of the post, the second is the author link, the third is the categories. You can remove any or all.
+
+To remove post tags, look for this line:
+
+	<p><span class="nbtags"><?php _e('Tags: ', ''); the_tags('', ', ', ''); ?></span></p>
+
+If you don't want tags to show, remove that line. Tags do not show in the archive.php file.
+
+
+Changing the footer information
+----------------------------------------------------------
+
+You can change the default footer information by editing the footer.php file. It defaults to showing the copyright information and a link to your blog home page with your WP blog title as the anchor text. In the footer.php file, you can split the grid_12 into two or more columns just by adding extra div's with the proper grid class assigned. So for example, if you want to display some links on the right side of the footer, you could change the grid_12 to grid_6 and add a second grid_6 div below the current one. Then you could add inline CSS to the div like this:
+
+<div class="grid_6 style="text-align:right;">
+
+This will align your links to the right side of your new grid_6 div.
+
+
+Removing comments from pages
+----------------------------------------------------------
+
+If you do not wish to show any comments on pages, you can either turn off the comments and pingbacks on each page, or you can edit the page.php file.  To remove the comments from page.php, open the file and find this code:
+
+	<?php
+	if (function_exists('wp_list_comments')) {
+		comments_template('', true);
+	} else {
+		comments_template();
+	}
+	?>
+
+Delete the entire section of code to remove comments from pages.
+
+
+Using the jQuery slider on your blog
+----------------------------------------------------------
+
+The slider is built into the WP theme, but it is commented out so it does not show by default.
+
+To activate the slider, you will need to do the following:
+
+Open functions.php and look for this code:
+
+// wp_enqueue_script( 'cycle', $directory_uri.'/js/jquery.cycle.all.min.js', array('jquery'));
+// wp_enqueue_script( 'easing', $directory_uri.'/js/jquery.easing.1.3.js', array('jquery'));
+
+Remove the // before each line and save. This will load the cycle and easing plugins for the slider.
+
+Next, open header.php and there are two places where there are comments you need to remove.
+
+Around line 34, find this comment opening tag:
+
+<!-- If you wish to use the feature slider on your blog, remove this commented line and the closing comment bracket following the </script> tag below. Also remove the comment brackets around the feature area below the header code.
+
+Delete that line.
+
+Around line 50, find this closing comment tag:
+
+remove this to show feature-->
+
+Delete that line.
+
+Now go to the bottom of the header.php file and remove the opening and closing comments that surround the feature container and images.
+
+The same sample images are included in the WP theme as the DW template. You can change the images as needed, but keep the <?php bloginfo('template_url'); ?> code in front of the link.  Or, use an absolute link to the images from the DW site. That way you don't need to duplicate the images you've already uploaded.
+
+After saving the header.php file, your slider should be activated on all your blog pages.
+
+If you want to control which pages the slider appears on, you can use a PHP conditional statement around the slider div code and the slider script code in the header.php file.
+
+So for example, if you only want the feature area to appear on your home page, you would do something like this:
+
+<?php if(is_home()) { ?>
+
+// slideshow javascript in head
+
+<?php } ?>
+
+
+AND THIS...
+
+
+<?php if(is_home()) { ?>
+
+// feature area code in header.php (lines 68-82)
+
+<?php } ?>
+
+
+If you want the slider to show up only on specific pages of your blog, you can do this:
+
+<?php if(is_page('8')) { ?>
+
+// slideshow javascript in head
+
+<?php } ?>
+
+
+AND THIS...
+
+
+<?php if(is_page('8')) { ?>
+
+// feature area code in header.php (lines 68-82)
+
+<?php } ?>
+
+You would replace the 8 value with the post ID of your page. You can get that by going into your Pages > Edit screen and hovering over the page you want to show it on, and looking in the status bar of your browser. The last number in the page URL is the ID number of the post.
+
+The same process can be used to just show the sub feature area (the area with the email opt-in form). Just remove the comment tags from around the code on lines 86-105. If you don't want either the feature area or the sub feature area on  your blog, you can simply delete all the commented code from header.php.
+
+You can extensively control where the slider appears by reading more about WordPress conditionals here:
+
+http://codex.wordpress.org/Conditional_Tags
+
+
+Working with the jQuery Accordion and Tabbed Panels
+----------------------------------------------------------
+
+For more information on how to customize the jQuery accordion and tab panels, visit:
+
+http://docs.jquery.com/UI/Accordion
+http://docs.jquery.com/UI/Tabs
+
+
+Working with jQuery Cycle plugin slider 
+----------------------------------------------------------
+
+For more information on how to customize the jQuery cycle plugin slider, visit:
+
+http://jquery.malsup.com/cycle/

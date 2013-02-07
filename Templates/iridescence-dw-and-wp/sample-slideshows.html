@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Iridescence Template from JustDreamweaver.com</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"> // loads jQuery </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> // for slideshow easing effects </script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"> // slideshow cycle plugin </script>
+<script type="text/javascript" src="js/hoverIntent.js"> // for navigation </script>
+<script type="text/javascript" src="js/superfish.js"> // for navigation </script>
+<script type="text/javascript" src="js/supersubs.js"> // for navigation </script>
+<script type="text/javascript">  // This script is for the navigation menu
+    $(document).ready(function(){ 
+        $("ul.sf-menu").supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+    }); 
+</script>
+<script type="text/javascript"> // This script controls the jQuery slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 5000, // how long slides are shown in ms
+    	speed:  1000, // how long transition takes in ms
+		easing: 'easeInOutQuad', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 1, // set to 1 to see two slides at the same time
+		autostop: 0,
+		pager: '#slidenav' // container element for optional slideshow navigation
+		});
+	});
+	</script>
+<script type="text/javascript"> // This script controls the second slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow2').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'turnDown', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 6000, // how long slides are shown in ms
+    	speed:  2000, // how long transition takes in ms
+		easing: 'easeInOutSine', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 0, // set to 1 to see two slides at the same time
+		autostop: 0
+		});
+	});
+	</script>
+<script type="text/javascript"> // This script controls the third slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow3').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'scrollLeft', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 5000, // how long slides are shown in ms
+    	speed:  2000, // how long transition takes in ms
+		easing: 'easeInOutQuad', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 0, // set to 1 to see two slides at the same time
+		autostop: 0
+		});
+	});
+	</script>
+<script type="text/javascript"> // This script controls the fourth slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow4').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'scrollUp', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 8000, // how long slides are shown in ms
+    	speed:  2000, // how long transition takes in ms
+		easing: 'easeInOutQuad', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 1, // set to 1 to see two slides at the same time
+		autostop: 0,
+		pager: '#slidenav4' // container element for optional slideshow navigation
+		});
+	});
+	</script>
+<script type="text/javascript"> // This script controls the sidebar slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow5').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'scrollUp', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 5000, // how long slides are shown in ms
+    	speed:  1000, // how long transition takes in ms
+		easing: 'easeInOutQuad', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 1, // set to 1 to see two slides at the same time
+		autostop: 0
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="header" class="container_12"> <a href="#"><img src="images/logo.png" alt="Logo"/></a>
+  <div class="headerlinks">
+    <p><a href="#">About Us</a> | <a href="#">Our Guarantee</a> | <a href="#">Blog</a> | <a href="#">Privacy</a></p>
+    <p><strong>Call Us Toll Free at 888-123-1234</strong></p>
+  </div>
+</div>
+<div id="nav" class="container_12">
+  <ul class="sf-menu">
+    <li> <a href="index.html">Home</a> </li>
+    <!-- apply first-item class to round the menu item corner -->
+    <li> <a href="#a">Sample Menu</a>
+      <ul>
+        <li> <a href="#aa">Menu item that is quite long</a> </li>
+        <li class="current"> <a href="#ab">Menu item</a>
+          <ul>
+            <li class="current"><a href="#">Menu item</a></li>
+            <li><a href="#aba">Menu item</a></li>
+            <li><a href="#abb">Menu item</a></li>
+            <li><a href="#abc">Menu item</a></li>
+            <li><a href="#abd">Menu item</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Menu item</a>
+          <ul>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Menu item</a>
+          <ul>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+            <li><a href="#">Menu item</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="#">Template Pages</a>
+      <ul>
+        <li> <a href="index.html">Home Page</a></li>
+        <li> <a href="left-sidebar.html">Left Sidebar</a></li>
+      	<li> <a href="right-sidebar.html">Right Sidebar</a></li>
+        <li> <a href="two-sidebars.html">Dual Sidebars</a></li>
+        <li> <a href="no-sidebars.html">No Sidebars</a></li>
+        <li> <a href="sample-slideshows.html">Slideshow Examples</a></li>
+        <li> <a href="960-grid.html">960 Grid System</a></li>
+         </ul>
+        </li>
+       
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+</div>
+<div class="container_wide">
+	<div class="slidewrap">
+		<div class="slideshow slide960"><img src="images/slide1.jpg" width="960" height="175" /><img src="images/slide2.jpg" width="960" height="175" /><img src="images/slide3.jpg" width="960" height="175" /><img src="images/slide4.jpg" width="960" height="175" /></div>
+	</div>
+	<div class="slidenavwrap">
+		<div id="slidenav"><span style="color:#fff;"> Slideshow has 27 transition effects. The three slides will rotate through all 27 effects above. Also includes optional slideshow navigation positionable Left, Center or Right &gt; </span></div>
+	</div>
+</div>
+<div id="content-top" class="container_12"></div>
+<div id="content" class="container_12">
+  <div class="grid_12">
+    <p>The slideshow below uses a different set of images to show how multiple slideshows can be used on the same page, simply by using a second jQuery script with a different selector. In this case, the top slideshow uses a class of 'slideshow' while the one below uses a class of 'slideshow2'.</p>
+    <div class="slideshow2 slide930" style="margin-bottom:30px;"><img src="images/slide1-930px.jpg" width="930" height="175" /><img src="images/slide2-930px.jpg" width="930" height="175" /><img src="images/slide3-930px.jpg" width="930" height="175" /><img src="images/slide4-930px.jpg" width="930" height="175" /></div>
+  </div>
+  <div class="grid_12">
+    <h4>Slideshows don't have to be just images. You can transition between any kind of HTML.</h4>
+    <div class="slideshow3" style="margin-bottom:30px;">
+      <div style="width:930px;">
+        <h1>This is slide 1 HTML content</h1>
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      </div>
+      <div style="width:930px;">
+        <h1>This is slide 2 HTML content</h1>
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+      </div>
+      <div style="width:930px;">
+        <h1>This is slide 3 HTML content</h1>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid_9">
+    <h3>Slideshows can be worked into any part of your page. With 27 transitions and multiple easing effects, you'll never run out of ideas!</h3>
+    <div  style="background-color:#f2f2f2;border:2px solid #999;padding:10px;height:170px;">
+      <div class="slideshow4">
+        <div>
+          <h1>This is slide 1 HTML content</h1>
+          <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        </div>
+        <div>
+          <h1>This is slide 2 HTML content</h1>
+          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+        </div>
+        <div>
+          <h1>This is slide 3 HTML content</h1>
+          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="toppad">Are you starting to see some great ideas for content presentation?</h2>
+  </div>
+  <div class="grid_3">
+    <div class="sidebarbox">
+      <h3>Sidebar Navigation</h3>
+      <ul>
+        <li><a href="left-sidebar.html">Left Sidebar Layout</a> </li>
+        <li><a href="right-sidebar.html">Right Sidebar Layout</a></li>
+        <li><a href="two-sidebars.html">Two Sidebar Layout</a></li>
+        <li><a href="no-sidebars.html">No Sidebar Layout</a></li>
+        <li><a href="960-grid.html">How the 960 Grid Works</a></li>
+        <li><a href="sample-slideshows.html">Sample Slideshows</a></li>
+      </ul>
+    </div>
+    <div class="simple">
+      <h4>Sidebar Navigation v.2</h4>
+      <ul>
+        <li><a href="#">Products</a> </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Our Company</a></li>
+        <li><a href="#">Our Guarantee</a></li>
+        <li><a href="#">Buy Now</a></li>
+      </ul>
+    </div>
+    <div class="sidebarbox">
+      <h3>Sidebar Content</h3>
+      <div class="slideshow5">
+        <div>
+          <p><strong>Slide information or images in the sidebar too!</strong></p>
+          <p>This is slideshow #5 on the page, all controlled separately using jQuery.</p>
+        </div>
+        <div>
+          <p><strong>Sidebar slider #2</strong></p>
+          <p>Again, more information that can be presented to your visitor in a step-by-step method.</p>
+        </div>
+        <div>
+          <p><strong>Last slide of the bunch</strong></p>
+          <p>This is slide #3 for this slideshow, and it will now loop back to #1.</p>
+        </div>
+      </div>
+    </div>
+    <div class="simple">
+      <h4>More Sidebar Content</h4>
+      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. </p>
+      <p>Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. </p>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer" class="container_12">
+  <div class="grid_6">Copyright &copy; 2010 Your Website</div>
+  <div class="grid_6" style="text-align:right;"><a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Our Blog</a></div>
+</div>
+</body>
+</html>

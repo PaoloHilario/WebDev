@@ -1,0 +1,606 @@
+/* YUI CSS reset
+----------------------------------------------------------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+ul, ol {
+	list-style-type:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+q:before, q:after {
+	content:'';
+}
+abbr, acronym {
+	border:0;
+}
+/* End of reset
+----------------------------------------------------------------------------------------------------*/
+body {
+	z-index: -100;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#header {
+	z-index: 2;
+	height: 78px;
+	background-color: #000;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #3A0402;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #A20D0F;
+	background-image: url(images/header-bg.jpg);
+	background-repeat: repeat-x;
+}
+#header img { /* floats logo image left */
+	float:left;
+}
+#content {
+	clear: both;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	line-height: 170%;
+	color: #333;
+}
+#footer {
+	height: 15px;
+	color: #999;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	background-image: url(images/footer-shadow.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+}
+a {
+	color: #900;
+}
+#footer a {
+	color: #999;
+}
+
+/* Suckerfish Menu Styles
+----------------------------------------------------------------------------------------------------*/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			12em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+	left:			0;
+	top:			27px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul, ul.sf-menu li:hover li li:hover ul, ul.sf-menu li.sfHover li li.sfHover ul {
+	left:			12em; /* match ul width */
+	top:			-1px; /* to accomodate top border */
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
+	left:			12em; /* match ul width */
+	top:			0;
+}
+.sf-menu {
+	float:			right;
+	margin-bottom:	0em;
+}
+.sf-menu a { /* top level menu items */
+	text-decoration:none;
+	padding-right: 8px;
+	padding-left: 8px;
+	white-space: nowrap;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.sf-menu li li a {
+	padding: 10px 12px;	/* set drop down menu height by adjusting the 10px value */
+	font-size: 11px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #6F0507;
+	border-bottom-color: #6F0507;
+	border-left-color: #6F0507;
+}
+.sf-menu li li:first-child {
+	border-top: 1px solid #6F0507; /* sub menu top border */
+}
+.sf-menu a, .sf-menu a:visited { /* main level menu text color */
+	color: #FFE7CE;
+}
+.sf-menu a:hover, .sf-menu li.sfHover a { /* main level menu text hover color */
+	color: #FFF;
+}
+.sf-menu li li a, .sf-menu li.sfHover li a { /* sub menu text color */
+	color: #FFEED7;
+}
+.sf-menu li li, .sf-menu li li li {
+	background-color: #420502; /* drop-down menu background color */
+}
+.sf-menu li li:hover, .sf-menu li li.sfHover, .sf-menu li li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active {
+	background-color:		#6F0507; /* drop-down menu hover color */
+}
+.sf-menu li li, .sf-menu li li li {
+	background-image: none;
+}
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline:		0;
+}
+.sf-menu li li:hover, .sf-menu li li.sfHover, .sf-menu li li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active {
+	background-image: none;
+	outline:		0;
+}
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	1.5em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			5px;
+	top:			17px; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url('images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+li li .sf-sub-indicator {
+	top:			13px; /* IE6 drop down arrow position */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			10px;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+li li a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			10px;
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator {
+	background-position:  -10px 0;
+}
+.sf-menu ul a > .sf-sub-indicator {
+	background-position:  0 0;
+}
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator, .sf-menu ul a:hover > .sf-sub-indicator, .sf-menu ul a:active > .sf-sub-indicator, .sf-menu ul li:hover > a > .sf-sub-indicator, .sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	background:	url('images/shadow.png') no-repeat bottom right;
+	padding: 0 8px 9px 0;
+	-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px;
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+
+
+/* Type styles
+----------------------------------------------------------------------------------------------------*/
+p {
+	padding-bottom: 10px;
+}
+h1 {
+	color: #900;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	font-style: normal;
+	line-height: 34px;
+	font-weight: normal;
+	font-variant: normal;
+}
+h2 {
+	color: #900;
+	margin-bottom: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: normal;
+}
+h3 {
+	color: #666;
+	margin-bottom: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 26px;
+	font-weight: normal;
+	font-variant: normal;
+}
+h4 {
+	margin-bottom: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 24px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333;
+}
+h5 {
+	color: #AB1919;
+	margin-bottom: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+/* Navigation wrapper styles
+----------------------------------------------------------------------------------------------------*/
+#nav {
+	z-index: 10;
+	height: 33px;
+	margin-top: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+}
+
+/* Sidebar content and nav styles
+----------------------------------------------------------------------------------------------------*/
+.sidebarbox {
+	border: 1px solid #CCC;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom:15px;
+	background-color: #F5F2F1;
+	line-height: 150%;
+	font-size: 12px;
+	color: #333;
+}
+.sidebarbox h3 {
+	font-weight: normal;
+	color: #FFF;
+	font-size: 14px;
+	border-bottom: 1px solid #CCC;
+	line-height: normal;
+	margin-bottom: 0px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	background-color: #AB1919;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+}
+.sidebarbox p {
+	padding:8px;
+}
+.sidebarbox ul {
+	margin: 0px;
+	padding: 3px 3px 2px 3px;
+	background: #FFF;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+.sidebarbox ul li {
+	list-style: none;
+	display: inline;
+}
+.sidebarbox ul li a {
+	display: block;
+	padding: 4px 4px 6px 10px;
+	line-height: 18px;
+	text-decoration:none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	border-bottom:1px solid #FFF;
+	color: #333;
+	background-color: #F5F2F1;
+}
+.sidebarbox ul li a:hover {
+	text-decoration: none;
+	color: #900;
+	background-color: #E7E0DE;
+}
+.simple {
+	margin-bottom:15px;
+	font-size: 12px;
+	line-height: 150%;
+	color: #666;
+}
+.simple ul li a {
+	display: block;
+	padding: 4px 4px 6px 10px;
+	border-bottom:1px solid #EAEAEA;
+	line-height: 18px;
+	text-decoration:none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+}
+.simple ul li a:hover {
+	text-decoration: none;
+	color: #000;
+	background-color: #F5F2F1;
+}
+
+/* Slideshow styles
+----------------------------------------------------------------------------------------------------*/
+
+#feature {
+	background-color: #000;
+	background-image: url(images/feature-bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+
+}
+#feature .feature-title {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	color: #FFF;
+	padding-top: 15px;
+	padding-left: 15px;
+	letter-spacing: -2px;
+	
+}
+#feature p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 17px;
+	color: #EEE3E3;
+	padding-left: 25px;
+	
+}
+.slideshow {
+	height: 250px;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+}
+
+.slide930 {
+	height: 200px;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+}
+.slide930 img {
+	height: 200px;
+	width: 930px;
+	top:0;
+	left:0;
+}
+
+/* Slideshow navigation styles
+----------------------------------------------------------------------------------------------------*/
+#slidenav {
+	text-align:center; /** change to left or center to reposition navigation **/
+	width:100%;
+	height:32px;
+	line-height:25px;
+	font: 11px/25px Arial, Helvetica, sans-serif;
+	padding-top:7px;
+}
+#slidenav a {
+	border: 1px solid #222;
+	background: #333;
+	text-decoration: none;
+	margin: 0 2px;
+	padding: 3px 5px;
+	color:#FFF;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+#slidenav a.activeSlide {
+	background: #666;
+	border: 1px solid #000;
+	color:#FFF;
+	font-weight: bold;
+}
+#slidenav a:focus {
+	outline: none;
+}
+
+/* Sub Feature Area Styles
+----------------------------------------------------------------------------------------------------*/
+
+#subfeature {
+	background-color: #EEE3E3;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCACAC;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+.subtitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: #900;
+	text-align: center;
+	
+}
+.subtext {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: #333;
+	text-align: center;
+	
+}
+.optinname, .optinemail {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 2px solid #000;
+	text-align: center;
+	width: 150px;
+	margin-right: 4px;
+	color: #FFF;
+	background-color: #900;
+}
+.submitbtn {
+	font-weight: bold;
+	color: #4C0604;
+	background-color: #EEE3E3;
+	width: 40px;
+	font-size: 22px;
+	cursor:pointer;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.smallitalic {
+	font-size: 11px;
+	font-style: italic;
+	color: #B96868;
+	margin-top: 9px;
+	
+}
+
+/* Social media icons in navigation
+----------------------------------------------------------------------------------------------------*/
+
+.sf-menu li li a.facebook {
+	background-image: url(images/social-media/facebook.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 30px;
+}
+.sf-menu li li a.twitter {
+	background-image: url(images/social-media/twitter.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 30px;
+}
+.sf-menu li li a.youtube {
+	background-image: url(images/social-media/youtube.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 30px;
+}
+.sf-menu li li a.linkedin {
+	background-image: url(images/social-media/linkedin.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 30px;
+}
+.sf-menu li li a.flickr {
+	background-image: url(images/social-media/flickr.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 30px;
+}
+
+
+/* Misc styles
+----------------------------------------------------------------------------------------------------*/
+
+.toppad { /* Generic style applied anywhere top padding needed */
+	padding-top:20px;
+}
+caption {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+table {
+	border: 1px solid #AB1919;
+}
+td {
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #AB1919;
+}
+tr.even {
+	background-color: #FAF3F4;
+}
+tr.odd {
+	background-color: #E1B7B8;
+}
+th {
+	color: #FFF;
+	background-color: #AB1919;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	font-weight: bold;
+}

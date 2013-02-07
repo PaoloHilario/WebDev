@@ -1,0 +1,358 @@
+/* This rule resets a core set of elements so that they will appear consistent across browsers. Without this rule, content styled with an h1 tag, for example, would appear in different places in Firefox and Internet Explorer because each browser has a different top margin default value. By resetting these values to 0, the elements will initially be rendered in an identical fashion and their properties can be easily defined by the designer in any subsequent rule. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+/* The body is the outermost layout component and contains the visible page content. Setting properties for the body element will help to create consistent styling of the page content and more manageable CSS. Besides using the body element to set global properties, it is common to use the body element to set the background color of the page and create a centered container for the page content to display. */
+body {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center; /* Centers the page content container in IE 5 browsers. */
+	background: #240F00 url(images/body-fade-bg.png) repeat-x top;
+}
+/* Commonly used to style page titles. */
+h1 {
+	color: #5E2600;
+	font: normal 28px/24px Georgia, "Times New Roman", Times, serif;
+}
+/* Commonly used to style section titles. */
+h2 {
+	color: #000;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	letter-spacing: -1px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #803300;
+	padding-bottom: 6px;
+}
+/* Sets the style for unvisited links. */
+a, a:link {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for visited links. */
+a:visited {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+	color: #000;
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+	color: #000;
+}
+/* This is a container for the page content. It is common to use the container to constrain the width of the page content and allow for browser chrome to avoid the need for horizontal scrolling. For fixed layouts you may specify a container width and use auto for the left and right margin to center the container on the page. IE 5 browser require the use of text-align: center defined by the body element to center the container. For liquid layouts you may simply set the left and right margins to center the container on the page. */
+#outerWrapper {
+	background-color: #fff;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left; /* Redefines the text alignment defined by the body element. */
+	width: 920px;
+}
+/* This is used solely to place a border around the page, but exluding the header and footer.  */
+#innerWrapper {
+	border: solid 2px #000;
+}
+/* This is the area above the navigation on the home page template only */
+#outerWrapper #homeheader {
+	background: url(images/homehead-bg.jpg) no-repeat center top;
+	color: #FFE3C6;
+	height: 24px;
+}
+/* This is the area above the navigation on the subpage template only */
+#outerWrapper #subpageheader {
+	color: #FFE3C6;
+	height: 103px;
+	background-image: url(images/subpage-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+/* These are the settings for the top navigation bar */
+#nav {
+	height: 47px;
+	color: #FFFFFF;
+	background: url(images/nav-bg.jpg) repeat-x top;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+#nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+#nav ul li {
+	margin: 0px;
+	display: block;
+	float: left;
+	list-style: none;
+	clear: right;
+}
+#nav ul li a {
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+	color: #CCCCCC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 47px;
+	font-weight: normal;
+	background: url(images/nav-divider.gif) no-repeat right top;
+}
+#nav ul li a:hover {
+	background: url(images/nav-hover.jpg) repeat-x top;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#nav ul li#active {
+	background: url(images/nav-hover.jpg) repeat-x top;
+	text-decoration: none;
+}
+#nav ul li#active a {
+	color: #FFFFFF;
+}
+/* This is the large image on the home page template only */
+#feature {
+	background: url(images/feature.jpg) no-repeat right top;
+	height: 251px;
+	border-bottom: 10px solid #000000;
+}
+/* This is the smaller image that spans the entire width of the subpage template */
+#subfeature {
+	height: 77px;
+	border-bottom: 10px solid #000000;
+	background-image: url(images/subpage-feature.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+/* This is the logo shown to the left of the large image on the home page only */
+#logo {
+	background: url(images/logo.jpg) no-repeat left top;
+	height: 251px;
+}
+#outerWrapper #contentWrapper {
+	overflow: hidden;
+	background: url(images/content-bg.jpg) repeat-y;
+}
+#outerWrapper #contentWrapper #content {
+	float: left;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 620px;
+}
+#outerWrapper #contentWrapper #rightColumn1 {
+	float: right;
+	width: 256px;
+	padding-bottom: 20px;
+}
+/* This creates more spacing between lines in the content paragraphs */
+#content p {
+	line-height: 140%;
+}
+/* These are the optional content area box settings */
+.widebox {
+	border: 1px solid #C0B099;
+	background-color: #F7F4F2;
+}
+.widebox h5 {
+	background-image: url(images/widebox-title.jpg);
+	background-repeat: repeat-x;
+	background-position: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFF;
+}
+#content .widebox p {
+	padding:8px;
+	margin:3px;
+	line-height: 120%;
+}
+/* This styles the headings in the right sidebar */
+#rightColumn1 h2 {
+	font: normal 22px/24px Georgia, "Times New Roman", Times, serif;
+	color: #E7E0D8;
+	background: url(images/sidebar-h2.jpg) no-repeat left top;
+	padding-left: 15px;
+	padding-top: 9px;
+	padding-bottom: 13px;
+	letter-spacing: normal;
+	border-bottom-style: none;
+}
+/* This styles the dividing lines between items in the right sidebar if hr is used */
+#rightColumn1 hr {
+	background-color: #A68F6F;
+	color: #A68F6F;
+	height: 1px;
+	border: 0;
+}
+/* This styles footer section */
+#outerWrapper #footer {
+	background-color: #240F00;
+	background-image: url(images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 45px;
+	color: #A39685;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+#footer a, #footer a:visited, #footer a:active, #footer a:focus {
+	color: #A39685;
+	font-weight: bold;
+}
+#footer a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+/* This provides padding away from the sidebar edges for sidebar paragraphs. */
+.pad {
+	padding-right: 10px;
+	padding-left: 15px;
+	clear: both;
+	padding-top: 15px;
+	margin: 0px;
+}
+/* This can be applied to images to position them left of the related content */
+.float-left {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 12px;
+	border: 1px solid #000;
+}
+/* These are the settings for the search form in the sidebar */
+#searchform {
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+#searchform label {
+	display:block;
+	padding-bottom:5px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #E7E0D8;
+	letter-spacing: 1px;
+	padding-left: 5px;
+}
+#searchform select {
+	width: 215px;
+	background-color: #E7E0D8;
+	color: #473D30;
+	border: 1px solid #655543;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	margin-bottom: 8px;
+}
+#searchform #button {
+	margin-left:45px;
+	width:125px;
+	height:31px;
+	text-align:center;
+	line-height:31px;
+	color:#E7E0D8;
+	font-size:11px;
+	font-weight:bold;
+	background-image: url(images/button.jpg);
+	background-repeat: no-repeat;
+	background-color: #C0B099;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 8px;
+}
+#searchform #button:hover {
+	color: #FFF;
+	background-image: url(images/button-hover.jpg);
+	cursor: pointer;
+}
+/* This is the surrounding div for the featured images box in the content section. Use for your styles. */
+.featuredimages {
+}
+/* This can be applied to the images in the featuredimages div to allow them to flow properly. */
+.featured-left {
+	float: left;
+	border: 1px solid #240F00;
+	margin-right: 6px;
+	margin-bottom: 10px;
+}
+/* This styles the sitemap page list */
+#sitemap li{
+	margin-bottom: 10px;
+	
+}
+#sitemap ul {
+	margin-top: 5px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+#sitemap li.subpage {
+	background: url(images/subpage.gif) no-repeat left top;
+	padding-left: 12px;
+	line-height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	list-style: none;
+}
+#sitemap li.subpage a, #content li.subpage a:link {
+	font-weight:normal;
+}
+/* These are the styles for the contact form */
+Label {
+}
+.inputValue {
+	width:50%;
+	margin-top:5px;
+}
+.inputText {
+	width:85%;
+	height:180px;
+	margin-top:5px;
+}
+.inputButton {
+}
+.emailFormError {
+	margin:0px;
+	color:#FF0000
+}
+.required {
+	font-size:9px;
+	color:#C00;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/Right-Sidebar.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AECSA.ORG : Contact</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- InstanceEndEditable -->
+<link rel="icon" type="image/png" href="http://www.aecsa.org/favicon.png">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="js/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"> // loads jQuery </script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"> // for jQuery UI components </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> // for slideshow easing effects </script> 
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"> // slideshow cycle plugin </script>
+<script type="text/javascript" src="js/hoverIntent.js"> // for navigation </script>
+<script type="text/javascript" src="js/superfish.js"> // for navigation </script>
+<script type="text/javascript" src="js/supersubs.js"> // for navigation </script>
+
+<script type="text/javascript"> //Script for Google Analyitics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22004073-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- InstanceBeginEditable name="head" -->
+
+<script type="text/javascript">  // This script is for the navigation menu
+    $(document).ready(function(){ 
+        $("ul.sf-menu").supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+    }); 
+</script>
+<script type="text/javascript"> // This script is for the accordion
+	$(function() {
+		$("#accordion").accordion({
+			autoHeight: false,
+			collapsible: true,
+			icons: {'header': 'ui-icon-plus', 'headerSelected': 'ui-icon-minus' }
+			});
+	});
+</script>
+<script type="text/javascript"> // This script is for the tabbed panels
+	$(function() {
+		$("#tabs").tabs();
+	});
+</script>
+
+<script type="text/javascript"> // This script controls the jQuery slideshow
+	jQuery(document).ready(function() {
+		jQuery('.slideshow').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 5000, // how long slides are shown in ms
+    	speed:  1000, // how long transition takes in ms
+		easing: 'easeInOutQuad', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		sync: 1, // set to 1 to see two slides at the same time
+		autostop: 0,
+		pager: '#slidenav' // container element for optional slideshow navigation
+		});
+	})
+</script>
+
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {
+	background-color: #F4F4F4;
+}
+</style>
+</head>
+<body>
+<div id="header" class="container_12"> <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
+  <div class="headerlinks">
+    <p><a href="index.html">About Us</a> | <a href="http://blog.aecsa.org">Blog</a> | <a href="#">Privacy</a></p>
+    <p><strong>Building Better Software</strong></p>
+  </div>
+</div>
+<div id="nav" class="container_12 toprounded">
+<ul class="sf-menu">
+    <li class="first-item"> <a href="index.html">Home</a> </li>
+    <!-- apply first-item class to round the menu item corner -->
+    <li> <a href="#a">Projects</a>
+      <ul>
+        <li> <a href="#aa">Project Proposals</a> </li>
+        <li class="current"> <a href="#ab">Applied Research</a>
+          <ul>
+            <li class="current"><a href="#">Application Integration</a></li>
+            <li><a href="#abd">Cross-Platform Integration</a></li>
+            <li><a href="#abd">Database Integration</a></li>
+            <li><a href="#aba">Cloud Computing</a></li>
+            <li><a href="#aba">Parallel Processing</a></li>
+            <li><a href="#aba">Mobile Technology</a></li>
+            <li><a href="#abc">Web API</a></li>
+            <li><a href="#abd">Communications</a></li>
+            <li><a href="#abb">Social Networking</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Implementations</a>
+          <ul>
+            <li><a href="#">C# dotNET</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Obj-C</a></li>
+            <li><a href="#">Mobile OS</a></li>
+            <li><a href="#">Web Services</a></li>
+            <li><a href="#">Database</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Downloads</a>
+          <ul>
+            <li><a href="#">AECSA SDK's</a></li>
+            <li><a href="#">AECSA API's</a></li>
+            <li><a href="#">Code Libraries</a></li>
+            <li><a href="#">Programming Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="#">Resources</a>
+      <ul>
+        <li> <a href="#">AECSA GitHub</a></li>
+        <li> <a href="#">AECSA Private Cloud</a></li>
+        <li> <a href="#">AECSA University</a></li>
+      	<li> <a href="#">AECSA Wiki</a></li>
+     </ul>
+    </li>
+    <li> <a href="#">Membership</a>
+      <ul>
+        <li> <a href="#">Software Professionals</a></li>
+        <li> <a href="#">Hardware Manufacturers</a></li>
+        <li> <a href="#">AEC Professionals</a></li>
+        <li> <a href="#">Business Professionals</a></li>
+      	<li> <a href="#">Universities</a></li>
+        <li> <a href="#">Scientific Institutions</a></li>
+     </ul>
+    </li>
+    <li> <a href="#">Sponsorship</a>
+      <ul>
+        <li> <a href="#">Technical Advisory Board</a></li>
+      	<li> <a href="#">Industry Advisory Board</a></li>
+        <li> <a href="#">Project Sponsorship</a></li>
+        <li> <a href="#">Quarterly Expense Reports</a></li>
+     </ul>
+    </li>
+    <li> <a href="contact.html">Contact</a></li>
+    <li> <a href="http://blog.aecsa.org">Blog</a></li>
+  </ul>
+</div>
+<div id="content-top" class="container_12"></div>
+<div id="content" class="container_12"><!-- InstanceBeginEditable name="MainContent" -->
+  <div class="grid_9">
+  <h1>Contact Us</h1>
+  <h3>Your message has been successfully sent</h3>
+        <!-- This controls the fields and styles for the validation prompt. To add more fields to be required, simply add them by field id to the 'isRequired' brackets below. The color styles are the outline color first and the fill color second for the form fields.--> 
+        <script type="text/javascript">
+			cleanValidator.init({
+				formId: 'contactform',
+				inputColors: ['#EDEDED', '#FFFFFF'],
+				errorColors: ['#FFFF99', '#CF3339'],
+				isRequired: ['Name','Email'],
+				isEmail: ['Email']
+			})
+		  </script>
+          <br />          
+          <br />
+          <!-- Links to scripts which make it simple to email form contents and prevent SPAM form submissions. -->
+</div><!-- InstanceEndEditable -->
+  <!-- InstanceBeginEditable name="Sidebar" -->
+  <div class="grid_3">
+      <div class="sidebarbox">
+      <h3>Thank You</h3>
+      <p>We appreciate your interest in our organization and will respond as soon as possible.</p>
+    </div>
+    <div class="sidebarbox">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="http://www.linkedin.com/company/aecsa-org">LinkedIn</a> </li>
+        <li><a href="http://www.twitter.com/AECSAORG">Twitter</a></li>
+        <li><a href="https://github.com/AECSA">GitHub</a></li>
+      </ul>
+    </div>
+    
+
+  </div><!-- InstanceEndEditable -->
+  <div class="clear"></div>
+</div>
+<div id="footer" class="container_12">
+  <div class="grid_6">Copyright &copy; 2011 AEC Software Alliance</div>
+  <div class="grid_6" style="text-align:right;">
+  <a href="http://www.linkedin.com/company/aecsa-org?trk=fc_badge"><img src="images/linkedin_badge.png" alt="AECSA.ORG on LinkedIn" align="bottom" locale="en"></a>
+  <a href="http://www.twitter.com/AECSAORG"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-c.png" alt="Follow AECSA on Twitter"/></a> <a href="https://github.com/AECSA"><img src="images/github_badge.png" alt="AECSA @ GitHub"/></a> <a href="http://blog.aecsa.org/feed"><img src="images/rss_badge.png" alt="AECSA RSS Feed"/></a></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

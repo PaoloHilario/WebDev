@@ -1,0 +1,21 @@
+a.searchmore {
+	margin-top: 0px;
+}
+
+#rightcol li.widget_categories div.sidebarbox h2.widgettitle {
+	margin-left: -16px;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+	cursor: hand;
+}
+#header #headerright #searchboxo form input.submitbutton {
+	cursor: hand;
+}
+
+h2.searchtitle-page, 
+div.postwrap h2.posttitle-page, 
+div.postwrap h2.posttitle {
+	display: block;
+	margin-top: 16px;
+}

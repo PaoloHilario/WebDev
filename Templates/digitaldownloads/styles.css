@@ -1,0 +1,484 @@
+/* This rule resets a core set of elements so that they will appear consistent across browsers. Without this rule, content styled with an h1 tag, for example, would appear in different places in Firefox and Internet Explorer because each browser has a different top margin default value. By resetting these values to 0, the elements will initially be rendered in an identical fashion and their properties can be easily defined by the designer in any subsequent rule. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+/* The body is the outermost layout component and contains the visible page content. Setting properties for the body element will help to create consistent styling of the page content and more manageable CSS. Besides using the body element to set global properties, it is common to use the body element to set the background color of the page and create a centered container for the page content to display. */
+body {
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+	background-color: #000;
+}
+/* Commonly used to style page titles. */
+h1 {
+	color: #9C0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 28px;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: -1px;
+}
+/* Commonly used to style section titles. */
+h2 {
+	color: #FFF;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+	padding-bottom: 6px;
+	letter-spacing: -1px;
+}
+hr {
+	background-color: #333;
+	color: #333;
+	height: 1px;
+	border: 0;
+	clear: left;
+}
+/* Sets the style for unvisited links. */
+:link:focus, :visited:focus { /* Prevents dotted focus outline in mozilla browsers */
+	-moz-outline: none;
+}
+a, a:link {
+	color: #9C0;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for visited links. */
+a:visited {
+	color: #9C0;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+	color: #9C0;
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+	color: #9C0;
+}
+/* This is a container for the page content. It is common to use the container to constrain the width of the page content and allow for browser chrome to avoid the need for horizontal scrolling. For fixed layouts you may specify a container width and use auto for the left and right margin to center the container on the page. IE 5 browser require the use of text-align: center defined by the body element to center the container. For liquid layouts you may simply set the left and right margins to center the container on the page. */
+#outerWrapper {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left; /* Redefines the text alignment defined by the body element. */
+	width: 920px;
+}
+/* This is the area above the navigation on the home page template only */
+#outerWrapper #header {
+	height: 85px;
+	padding-left: 0px;
+	padding-top: 20px;
+}
+#logo {
+	float:left;
+}
+/* Sets the style for the header text. */
+#headinfo {
+	float: right;
+	padding-top: 20px;
+	text-align: right;
+}
+/* Creates the background for the top navigation. */
+#navbg {
+	background-image: url(images/nav-bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 56px;
+}
+/* These are the settings for the top navigation bar */
+#nav {
+	height: 47px;
+	color: #FFFFFF;
+	float: left;
+	width: 645px;
+}
+#nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+#nav ul li {
+	margin: 0px;
+	display: block;
+	float: left;
+	list-style: none;
+	clear: right;
+}
+#nav ul li a {
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top:5px;
+	text-align: center;
+	color: #CCC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 42px;
+	font-weight:bold;
+}
+#nav ul li a:hover {
+	text-decoration: none;
+	padding-top:0px;
+	line-height: 47px;
+	color: #FFFFFF;
+	background-image: url(images/nav-hover.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#nav ul li#active {
+	background: url(images/nav-hover.jpg) repeat-x top;
+	text-decoration: none;
+}
+#nav ul li#active a {
+	color: #FFFFFF;
+}
+/* This is the div for the image that overlaps the top navigation bar */
+#nav-rightimage {
+	background-image: url(images/navbg-image.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 56px;
+	width: 271px;
+	float: right;
+}
+/* This is the large image on the home page template only */
+#feature {
+	height: 225px;
+	background-image: url(images/feature.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-bottom: 10px;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 350px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+	text-align: left;
+}
+#feature .title {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+#feature ul {
+	padding-top: 0px;
+	margin-top: 25px;
+	color: #9C0;
+}
+#feature ul li {
+}
+#feature p {
+	margin: 0px;
+	padding: 0px;
+}
+/* Styles for download icon */
+#download {
+	float:right;
+	margin-top: 30px;
+}
+/* This is the smaller image that spans the entire width of the subpage template */
+#subfeature {
+	height: 106px;
+	background-image: url(images/subpage-feature.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: #000;
+}
+.subfeature-content  {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 155px;
+	
+}
+#subfeature p {
+	margin: 0px;
+	padding: 0px;
+}
+#subfeature .title {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#subfeature a:link, #subfeature a:visited, #subfeature a:active {
+	color:#FFF;
+}
+/* This is the logo shown to the left of the large image on the home page only */
+#feature-left {
+	height: 251px;
+	background-image: url(images/feature-left.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#outerWrapper #contentWrapper {
+	overflow: hidden;
+	background-image: url(images/content-fade.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#outerWrapper #contentWrapper #content {
+	float: left;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 600px;
+}
+#outerWrapper #contentWrapper #rightColumn {
+	float: right;
+	width: 265px;
+	padding-bottom: 20px;
+	margin-top: 0px;
+	padding-right: 0px;
+}
+/* This creates more spacing between lines in the content paragraphs */
+#content p {
+	line-height: 140%;
+}
+/* This styles the headings in the right sidebar */
+#rightColumn h2 {
+	color: #999;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px;
+	letter-spacing: 3px;
+	background-image: url(images/sidebar-h2.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #272727;
+}
+/* This styles the dividing lines between items in the right sidebar if hr is used */
+#rightColumn hr {
+	background-color: #333;
+	color: #333;
+	height: 1px;
+	border: 0;
+}
+/* This styles the navigation links in the sidebar. */
+#rightColumn ul {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+#rightColumn ul li {
+	list-style: none;
+	display: inline;
+}
+#rightColumn ul li a {
+	padding: 4px 4px 4px 6px;
+	color: #999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 24px;
+	letter-spacing: -1px;
+	display: block;
+	background-color: #000;
+}
+#rightColumn ul li a:hover {
+	text-decoration: none;
+	color: #9C0;
+	background-color: #202020;
+}
+/* Styles the background and border for the sidebar boxes */
+.sidebar-border {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #272727;
+	border-right-color: #272727;
+	border-bottom-color: #272727;
+	border-left-color: #272727;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-color: #000;
+	padding: 10px;
+}
+.sidebar-border p {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+/* This styles footer section */
+#outerWrapper #footer {
+	height: 45px;
+	color: #666;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background-color: #000;
+	font-size: 11px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333;
+}
+#footer a:link, #footer a:visited, #footer a:active {
+	color: #666;
+}
+#footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+		
+}
+#footer p {
+	margin:0 0 10px 0;
+	padding:0px;
+}
+/* These are the settings for the contact form in the sidebar. Commonly used for newsletter signups. */
+#newsletter {
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding-top: 15px;
+}
+#newsletter label {
+	display:block;
+	padding-bottom:5px;
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #999;
+	letter-spacing: 1px;
+	padding-left: 5px;
+}
+#newsletter input {
+	width: 215px;
+	background-color: #333;
+	color: #FFF;
+	border: 1px solid #666;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	margin-bottom: 8px;
+}
+#newsletter select {
+	width: 215px;
+	background-color: #FFF;
+	color: #666;
+	border: 1px solid #425066;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	margin-bottom: 8px;
+}
+#newsletter #button {
+	margin-left:45px;
+	width:125px;
+	height:31px;
+	text-align:center;
+	color:#FFF;
+	font-size:11px;
+	font-weight:bold;
+	background-image: url(images/button.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 8px;
+	line-height: 25px;
+}
+#newsletter #button:hover {
+	color: #FFF;
+	background-image: url(images/button-hover.jpg);
+	cursor: pointer;
+}
+/* Styles for floating images right or left */
+.right {
+	float:right;
+	margin: 10px 0 10px 15px;
+}
+.left {
+	float:left;
+	margin: 10px 15px 10px 0;
+}
+.green {
+	color:#9C0;	
+}
+/* This styles the sitemap page list */
+#sitemap li{
+	margin-bottom: 8px;
+
+}
+#sitemap ul {
+	margin-top: 5px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+#sitemap li.subpage {
+	background: url(images/subpage.gif) no-repeat left top;
+	padding-left: 12px;
+	line-height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	list-style: none;
+}
+#sitemap li.subpage a, #content li.subpage a:link {
+	font-weight:normal;
+}
+/* These are the styles for the contact form */
+Label {
+}
+.inputValue {
+	width:50%;
+	margin-top:5px;
+}
+.inputText {
+	width:85%;
+	height:180px;
+	margin-top:5px;
+}
+.inputButton {
+}
+.required {
+	font-size:9px;
+	color:#C00;
+}

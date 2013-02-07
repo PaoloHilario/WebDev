@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>My Website</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="MetaTags" -->
+<meta name="keywords" content="keywords" />
+<meta name="description" content="description" />
+<!-- TemplateEndEditable -->
+<link href="../styles.css" rel="stylesheet" type="text/css" />
+<!--[if IE 5]>
+<style type="text/css"> 
+/* IE 5 does not use the standard box model, so the column widths are overidden to render the page correctly. */
+#outerWrapper #contentWrapper #rightColumn {
+  width: 265px;
+}
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* The proprietary zoom property gives IE the hasLayout property which addresses several bugs. */
+#outerWrapper #contentWrapper, #outerWrapper #contentWrapper #content {
+  zoom: 1;
+}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css"> 
+img, div {
+  behavior: url("iepngfix/iepngfix.htc");
+}
+</style>
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+</head>
+<body>
+<div id="outerWrapper">
+  <div id="header"><a href="../index.html"><img src="../images/logo.png" name="logo" width="297" height="55" id="logo" /></a>
+    <div id="headinfo"><a href="#">Log in</a>&nbsp; | &nbsp;Customer Service <span class="green">888-123-1234</span></div>
+  </div>
+  <div id="navbg">
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Software</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="../aboutus.html">About Us</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="nav-rightimage"></div>
+  </div>
+  <div id="feature"><!-- TemplateBeginEditable name="Feature Content" -->
+    <p class="title">Download a 30-day trial of the MP3 software that is changing the world.</p>
+    <a href="#"><img src="../images/download.png" name="download" width="104" height="102" id="download"/></a>
+    <ul>
+      <li>30-day FREE trial download</li>
+      <li>Pay as you go, no long-term commitment</li>
+      <li>Play your MP3 files on any player</li>
+      <li>Save with our daily specials</li>
+      <li>No-hassle return policy</li>
+    </ul>
+    <!-- TemplateEndEditable --></div>
+  <div id="contentWrapper">
+    <div id="content"><!-- TemplateBeginEditable name="Content" -->
+      <h1>Download all your favorite MP3 files for one low price</h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nec tellus   eget lectus tristique feugiat. Pellentesque semper. Proin justo. Mauris est.   Aliquam viverra. Praesent posuere massa et dolor. Curabitur eros. Etiam ipsum   velit, consequat non, porta sit amet, varius a, enim. Vivamus ut dui. Vestibulum   consectetuer lobortis diam. Fusce dapibus. Mauris consequat orci eget odio. <img src="../images/sample-image-large.png" width="196" height="156" class="right" />Praesent vel nisi. Class aptent taciti sociosqu ad litora torquent per conubia   nostra, per inceptos himenaeos. </p>
+      <p>Pellentesque accumsan orci sed dui. Mauris nec mauris. Maecenas rhoncus, ante   at accumsan tempor, dui felis imperdiet dolor, at interdum pede ligula a dolor.   Donec adipiscing. Donec et diam. Mauris pede ipsum, pulvinar vestibulum,   scelerisque eu, pulvinar id, tellus. Curabitur in purus. Phasellus sapien. Ut   tincidunt mauris ac nisl. Etiam tellus. Vestibulum a felis. </p>
+      <p>&nbsp;</p>
+      <h2>Here's why over 3 million users choose our software</h2>
+      <p> Donec adipiscing. Donec et diam. Mauris pede ipsum, pulvinar vestibulum,   scelerisque eu, pulvinar id, tellus. Curabitur in purus. Phasellus sapien. Ut   tincidunt mauris ac nisl. Etiam tellus. Vestibulum a felis. </p>
+      <p><img src="../images/sample-image-small.png" width="87" height="67" class="left" /><strong class="green">Pellentesque accumsan orci sed dui</strong><br />
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nec tellus   eget lectus tristique feugiat. Pellentesque semper. Proin justo. Mauris est.   Aliquam viverra. Praesent posuere massa et dolor. Curabitur eros. </p>
+      <hr />
+      <p><img src="../images/sample-image-small.png" width="87" height="67" class="left" /><strong class="green">Pellentesque accumsan orci sed dui</strong><br />
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nec tellus   eget lectus tristique feugiat. Pellentesque semper. Proin justo. Mauris est.   Aliquam viverra. Praesent posuere massa et dolor. Curabitur eros.</p>
+      <hr />
+      <p><img src="../images/sample-image-small.png" width="87" height="67" class="left" /><strong class="green">Pellentesque accumsan orci sed dui</strong><br />
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nec tellus   eget lectus tristique feugiat. Pellentesque semper. Proin justo. Mauris est.   Aliquam viverra. Praesent posuere massa et dolor. Curabitur eros.</p>
+      <!-- TemplateEndEditable --></div>
+    <div id="rightColumn">
+      <h2>SUPPORT INFORMATION</h2>
+      <div class="sidebar-border">
+        <ul>
+          <li><a href="#">Software Support</a></li>
+          <li><a href="#">MP3 Support</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Artist List</a></li>
+          <li><a href="#">Our Guarantee</a></li>
+        </ul>
+      </div>
+      <h2>NEWSLETTER SIGNUP</h2>
+      <div class="sidebar-border">
+        <form action="" method="post" id="newsletter">
+          <label>Your Name</label>
+          <input name="Name" type="text" />
+          <label>Email Address</label>
+          <input name="Name" type="text" />
+          <input name="submit" type="submit" id="button" value="Subscribe" />
+        </form>
+      </div>
+      <h2>HOTTEST SINGLES</h2>
+      <div class="sidebar-border">
+        <p><strong>Kate Perry - I Kissed a Girl</strong><br />
+          2.74 MB - 2:59 min - 128Kbit<br />
+          <a href="#">Download Now </a></p>
+        <hr />
+        <p><strong>Ne-vo - Closer</strong><br />
+          3.58 MB - 3:54 min - 128Kbit<br />
+          <a href="#">Download Now </a></p>
+        <hr />
+        <p><strong>Leave Short - Leave Short</strong><br />
+          1.38 MB - 1:30 min - 128Kbit<br />
+          <a href="#">Download Now </a></p>
+      </div>
+    </div>
+    <br style="clear:both;" />
+  </div>
+  <div id="footer">
+    <p><a href="../index.html">HOME</a>&nbsp; | &nbsp;<a href="#">DOWNLOADS</a>&nbsp; | &nbsp;<a href="#">ARTIST LIST</a>&nbsp; | &nbsp;<a href="#">SUPPORT</a>&nbsp; | &nbsp;<a href="#">CUSTOMER SERVICE</a>&nbsp; | &nbsp;<a href="../privacy.html">PRIVACY</a>&nbsp; | &nbsp;<a href="../sitemap.html">SITE MAP</a></p>
+    <p> Copyright © 2008 Your Comany Name Here</p>
+  </div>
+</div>
+</body>
+</html>
